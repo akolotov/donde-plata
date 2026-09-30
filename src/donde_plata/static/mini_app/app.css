@@ -1,0 +1,13 @@
+:root {
+  color-scheme: var(--tg-color-scheme, light);
+  font-family: system-ui, sans-serif;
+  background: var(--tg-theme-bg-color, #ffffff);
+  color: var(--tg-theme-text-color, #202020);
+}
+body { margin: 0; }
+main {
+  max-width: 36rem;
+  margin: 0 auto;
+  padding: max(1.5rem, env(safe-area-inset-top)) 1.5rem;
+}
+#status { color: var(--tg-theme-hint-color, #666666); }

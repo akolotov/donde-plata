@@ -30,6 +30,10 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
       - name: Install test dependencies
         run: |
           python -m venv .venv
@@ -37,6 +41,10 @@ jobs:
           .venv/bin/python -m pip install ".[dev]"
       - name: Run tests
         run: .venv/bin/python -m pytest -q
+      - name: Check Mini App client
+        run: |
+          node tests/test_mini_app_ui.js
+          node --check src/donde_plata/static/mini_app/app.js
 
   publish:
     name: Build and publish
