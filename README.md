@@ -1,6 +1,26 @@
 # Donde Plata
 
-Minimal Python Telegram bot and Mini App served through a shared Tailscale Funnel gateway.
+Donde Plata is a family finance assistant designed to bring both partners' income, expenses, and balances into one place. The goal is to reduce manual bookkeeping and make it easy to understand where money goes, how spending compares with the family budget, and how much savings earn.
+
+## How it works
+
+The assistant provides two ways to work with the same financial records inside Telegram:
+
+- **Telegram bot:** a chat with a program. Send it a bank statement, a payment screenshot, or a message about a purchase. The assistant is intended to record transactions, ask for clarification when needed, and send regular financial summaries.
+- **Telegram Mini App:** an interactive application that opens inside Telegram. It provides space for browsing transaction history, managing accounts and expense categories, and planning budgets.
+
+Telegram makes it convenient for both partners to share documents directly from their banking apps and use the assistant on their existing devices.
+
+## Planned capabilities
+
+- Track income, expenses, and transfers across bank accounts, cash, and cryptocurrency holdings in multiple currencies. Transfers between family accounts should not inflate income or spending.
+- Import transactions from statements, screenshots, bank notification emails, and text messages. Use AI where needed to interpret data, suggest expense tags, or match the two sides of a transfer, with user clarification for uncertain cases.
+- Organize expenses with multiple tags and compare actual spending with monthly and annual budgets.
+- Send regular summaries showing spending, budget progress, and savings income, and help record recurring payments.
+- Track interest, cashback, and earnings from cryptocurrency lending separately from deposits and withdrawals.
+- Support shared and private accounts, reconcile recorded balances with actual balances, and keep a history of changes.
+
+These capabilities describe the product direction. The current repository provides a minimal Python Telegram bot and Mini App scaffold served through a shared Tailscale Funnel gateway; the finance features are not yet implemented.
 
 ## Development
 
